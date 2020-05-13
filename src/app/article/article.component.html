@@ -1,0 +1,78 @@
+
+
+<style>
+
+  button {
+    background-color: rgb(177, 0, 0);
+    color: white;
+    padding: 1%;
+    text-align: center;
+    display: inline-block;
+    font-size: 80%;
+    float: right;
+    position: center;
+  }
+
+  button:active {
+    background-color: rgb(177, 0, 0);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+
+  button:hover {
+    background-color: white;
+    color: rgb(177, 0, 0);
+  }
+
+  div {
+    margin-top: 1%;
+    background-color: #F5F5F5;
+    margin-right: 20%;
+    margin-left: 10%;
+    box-shadow: 2px 2px 1px #444;
+  }
+
+  h3 {
+    color: black;
+    font-size: 80%;
+  }
+
+  h4 {
+    color: green;
+    font-size: 80%;
+  }
+
+  .codeArticle {
+    font-size: 90%;
+    color: rgb(61, 60, 60);
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 80%;
+    color: #000000;
+    font-weight: bold;
+  }
+
+  tr {
+    width: 40%;
+  }
+
+  td {
+    width: 5%;
+    lenght: 5%;
+  }
+
+</style>
+<div>
+  <button (click)="this.delete()"> Supprimer</button>
+  <table>
+    <tr *ngIf="article">
+      <td><p><a class="codeArticle" [routerLink]="['/articles',this.article.id]">{{this.Code}}</a></p></td>
+      <td><p>{{this.productName}}</p></td>
+      <td><h4>Nutriscore  {{this.productNutriscore}}</h4></td>
+      <td><h3>{{this.productCountry}}</h3></td>
+    </tr>
+  </table>
+</div>

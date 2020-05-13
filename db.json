@@ -1,0 +1,82 @@
+{
+  "list-article": [
+    {
+      "Code": "0000000000123",
+      "id": 14,
+      "product_name": "Sauce Sweety chili 0%",
+      "countries": "France",
+      "nutriscore_grade": null
+    },
+    {
+      "Code": "0000000000178",
+      "id": 15,
+      "product_name": "Mini coco",
+      "countries": "France",
+      "nutriscore_grade": null
+    },
+    {
+      "Code": "0000000000208",
+      "id": 16,
+      "product_name": "Pistou d'ail des ours",
+      "countries": "France",
+      "nutriscore_grade": null
+    },
+    {
+      "Code": "0000000004559",
+      "id": 17,
+      "product_name": "Peanuts",
+      "countries": "United States",
+      "nutriscore_grade": null
+    },
+    {
+      "Code": "0000000000031",
+      "id": 11,
+      "product_name": "Cacao",
+      "countries": "France",
+      "nutriscore_grade": null
+    },
+    {
+      "Code": "0000003327986",
+      "id": 12,
+      "product_name": "Filetes de pollo empanado",
+      "countries": "Espagne",
+      "nutriscore_grade": null
+    },
+    {
+      "Code": "0000000000100",
+      "id": 13,
+      "product_name": " moutarde au goût de raisin ",
+      "countries": "France",
+      "nutriscore_grade": "D"
+    },
+    {
+      "Code": "",
+      "id": 18
+    },
+    {
+      "Code": "",
+      "id": 19
+    },
+    {
+      "Code": "",
+      "product_name": "",
+      "countries": "",
+      "nutriscore_grade": "",
+      "id": 20
+    },
+    {
+      "Code": "",
+      "product_name": "",
+      "countries": "",
+      "nutriscore_grade": "",
+      "id": 21
+    },
+    {
+      "Code": "",
+      "product_name": "",
+      "countries": "",
+      "nutriscore_grade": "",
+      "id": 22
+    }
+  ]
+}

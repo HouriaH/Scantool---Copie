@@ -1,0 +1,47 @@
+h3 {
+    color: dimgrey;
+    text-decoration: none;
+    font-variant: normal;
+    margin-left: 40px;
+    font-size:25px;
+  }
+  h2{
+    color: darkorange;
+    text-decoration: none;
+    font-variant: normal;
+    margin-left: 40px;
+    font-size:20px;
+  }
+  div {
+    margin-top: 5px;
+    background-color: #F5F5F5;
+    margin-right: 2%;
+    margin-left: 2%;
+  }
+  .center-block{
+    margin-bottom: 5px;
+  }
+
+  .button{
+    background-color: darkorange;
+    border-radius: 4px;
+    color: white;
+    padding: 12px 14px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    float: right;
+    position: center;
+  }
+
+  button:active {
+    background-color: darkorange;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+
+  button:hover {
+    background-color: white;
+    color: darkorange;
+  }

@@ -1,0 +1,38 @@
+<div>
+  <h3>Passer le code-barre devant la caméra ci-dessous</h3>
+
+  <form [formGroup]="articleForm" (ngSubmit)="create()">
+    <div class="form-group">
+
+      <h2>Code barre détecté :
+       <small style="color: blue" class="form-control" id="valeurCode">{{value}}</small>
+      </h2>
+
+      <p style="color:red" *ngIf="isError">Barcode scan is not available.</p>
+      <barcode-scanner [(value)]="value"
+                       [codes]="['code_128', 'ean', 'upc', 'upc_e', 'ean_8']" [errorThreshold]="0.1"
+                       (exception)="onError($event)"></barcode-scanner>           
+      <app-barcode-generator [bc-value]="value" [bc-display-value]="true"></app-barcode-generator>
+
+
+      <label class="center-block">Code:
+        <input class="form-control" formControlName="Code" value={{value}}>
+      </label>
+
+      <label class="center-block">Product name:
+        <input class="form-control" formControlName="product_name">
+      </label>
+
+      <label class="center-block">Nutriscore:
+        <input class="form-control" formControlName="nutriscore_grade">
+      </label>
+
+      <label class="center-block">Countries:
+        <input class="form-control" formControlName="countries">
+      </label>
+
+
+      <button class="button" type="submit">Enregistrer l'article</button>
+    </div>
+</form>
+</div>
