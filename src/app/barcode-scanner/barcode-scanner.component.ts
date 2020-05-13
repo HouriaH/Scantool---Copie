@@ -56,6 +56,7 @@ export class BarcodeScannerComponent implements OnInit, OnDestroy {
     this.setConfig();
     const threshold = isNaN(this.errorThreshold) ? 0.1 : this.errorThreshold;
     this.service.start(this.config, threshold).subscribe((value) => {
+      console.log('value changed', value);
       this.valueChange.emit(value);
       this.service.stop();
     }, error => {

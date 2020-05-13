@@ -87,7 +87,7 @@ export class BarcodeGeneratorComponent implements OnChanges {
     }
     this.renderer.appendChild(this.bcElement.nativeElement, element);
 
-    saveSvgAsPng(document.getElementById("barcode"), "barcode.png");
+    // saveSvgAsPng(document.getElementsByTagName('svg')[0], 'barcode.png');
   }
 
 }

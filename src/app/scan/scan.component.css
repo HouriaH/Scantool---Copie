@@ -45,3 +45,10 @@ h3 {
     background-color: white;
     color: darkorange;
   }
+
+  img {
+    max-width: 300px;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }

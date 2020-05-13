@@ -29,10 +29,7 @@ export class ArticleService {
     return this.http.get<Article[]>(`http://localhost:3000/list-article?q=${filter}`);
   }
  
-  public getData(){
-    return this.http.get('https://world.openfoodfacts.org/api/v0/product${CODE}.json')
-    .subscribe(data => {
-      console.log("We got",data)
-    })
+  public getData(code: string){
+    return this.http.get(`https://world.openfoodfacts.org/api/v0/product/${code}.json`);
   }
 }
